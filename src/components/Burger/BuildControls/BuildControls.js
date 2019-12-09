@@ -18,7 +18,8 @@ const buildControls = (props) => (
                     label={ctrl.label}
                     key={ctrl.label}
                     added={() => props.ingredientAdded(ctrl.type)}
-                    removed={() => props.ingredientRemove(ctrl.type)}
+                    removed={() => props.ingredientRemoved(ctrl.type)}
+                    disabled ={props.disabled[ctrl.type]}
 
                     // addIngredient={() => props.addIngredients(ctrl.type)}
                     // removeIngredient={() => props.removeIngredient(ctrl.type)}
@@ -30,7 +31,8 @@ const buildControls = (props) => (
         <button
             // disabled={!props.purchaseAble}
             className={classes.OrderButton}
-            onClick={props.ordered}> ORDER NOW
+            onClick={props.ordered}>
+            ORDER NOW
         </button>
     </div>
 );
