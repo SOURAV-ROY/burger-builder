@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c77acff1-78af-4af3-81ba-38f53d64d895" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControl/BuildControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControl/BuildControl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger/BuildControls/BuildControls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" afterDir="false" />
-    </list>
+    <list default="true" id="c77acff1-78af-4af3-81ba-38f53d64d895" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +70,7 @@
       <updated>1575788976022</updated>
       <workItem from="1575788982510" duration="9113000" />
       <workItem from="1575822029868" duration="4878000" />
-      <workItem from="1575870365142" duration="9406000" />
+      <workItem from="1575870365142" duration="9729000" />
     </task>
     <servers />
   </component>
