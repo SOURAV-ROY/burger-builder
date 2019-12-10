@@ -18,8 +18,7 @@ const burger = (props) => {
         transformedIngredients = <p>Please Adding Ingredients!!!</p>;
     }
 //  Awesome *********************************************************************************
-
-    // console.log(transformedIngredients);
+//  console.log(transformedIngredients);
 
     return (
 
