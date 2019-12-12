@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c77acff1-78af-4af3-81ba-38f53d64d895" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -80,7 +82,9 @@
       <workItem from="1575882238421" duration="441000" />
       <workItem from="1575909829248" duration="6724000" />
       <workItem from="1575956978148" duration="7194000" />
-      <workItem from="1576040822190" duration="8418000" />
+      <workItem from="1576040822190" duration="9520000" />
+      <workItem from="1576160498786" duration="121000" />
+      <workItem from="1576160669285" duration="3656000" />
     </task>
     <servers />
   </component>
@@ -92,9 +96,13 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="29" key="#ESLint/0.0.1366.738@0.0.1366.738" timestamp="1576044378993" />
-    <state x="176" y="2" key="SettingsEditor" timestamp="1575870840519">
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576160611779">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="176" y="2" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1575870840519" />
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1576160611779" />
+    <state x="176" y="2" key="SettingsEditor" timestamp="1576160795339">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="176" y="2" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1576160795339" />
   </component>
 </project>
