@@ -1,4 +1,4 @@
-.Toolbar{
+.Toolbar {
     height: 56px;
     width: 100%;
     position: fixed;
@@ -13,6 +13,10 @@
     z-index: 90;
 }
 
-.Toolbar nav{
+.Toolbar nav {
     height: 100%;
+}
+
+.Logo {
+    height: 80%;
 }
