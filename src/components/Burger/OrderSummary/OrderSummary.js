@@ -3,6 +3,16 @@ import Aux from "../../../hoc/ReactAux";
 import Button from '../../UI/Button/Button';
 
 class OrderSummary extends Component {
+    //This should be a functional component, doesn't have to be class
+
+    componentWillUpdate(){
+        console.log('[OrderSummary] WillUpdate');
+    }
+
+    // shouldComponentUpdate(nextProps, nextState, nextContext) {
+    //     // if (nextProps.show != this.props.show){}
+    //     return nextProps.show != this.props.show;
+    // }
 
     render() {
 
@@ -14,7 +24,7 @@ class OrderSummary extends Component {
                     </li>
                 );
             });
-        
+
         return (
             <Aux>
                 <h3>Your Order</h3>
