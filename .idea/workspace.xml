@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c77acff1-78af-4af3-81ba-38f53d64d895" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/SideDrawer/DrawerToggle/DrawerToggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/SideDrawer/DrawerToggle/DrawerToggle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/SideDrawer/SideDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/SideDrawer/SideDrawer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Burger/OrderSummary/OrderSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger/OrderSummary/OrderSummary.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -95,7 +92,7 @@
       <workItem from="1576230392325" duration="5344000" />
       <workItem from="1576258375292" duration="1424000" />
       <workItem from="1576305551344" duration="876000" />
-      <workItem from="1576341318337" duration="1590000" />
+      <workItem from="1576341318337" duration="3094000" />
     </task>
     <servers />
   </component>
@@ -119,9 +116,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" width="672" height="677" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1576259182068" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1576343866129">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1576344788789">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1576343866129" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1576344788789" />
   </component>
 </project>
