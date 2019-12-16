@@ -32,13 +32,17 @@ class BurgerBuilder extends Component {
         totalPrice: 20,
         purchasable: false,
         purchasing: false,
-        loading: false
+        loading: false,
+        error: false
     };
 
     componentDidMount() {
-        axios.get('https://burger-banai.firebaseio.com/ingredients.json')
+        axios.get('https://burger-banai.firebaseio.com/ingredients')
             .then(response => {
                 this.setState({ingredients: response.data});
+            })
+            .catch(error => {
+                this.setState({error: true});
             });
     }
 
@@ -150,7 +154,8 @@ class BurgerBuilder extends Component {
         //     purchaseContinued={this.purchaseContinueHandler}
         // />;
 
-        let burger = <Spinner/>;
+        let burger = this.state.error ? <p>Ingredients Can't Be Loaded</p> : <Spinner/>;
+
         if (this.state.ingredients) {
             burger = (
                 <Aux>
