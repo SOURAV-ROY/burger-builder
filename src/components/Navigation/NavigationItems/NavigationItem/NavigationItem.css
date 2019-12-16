@@ -40,7 +40,7 @@
     .NavigationItem a.active {
         background-color: #8F5C2C;
         border-bottom: 4px solid #40A4C8;
-        color: white;
+        color: #14e8a6;
     }
 }
 
