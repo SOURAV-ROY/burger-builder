@@ -21,7 +21,7 @@ class App extends Component {
                 <Layout>
                     <BurgerBuilder/>
                     {/*{this.state.show ? <BurgerBuilder/> : null}*/}
-                    <Checkout></Checkout>
+                    <Checkout/>
                 </Layout>
             </div>
         );
