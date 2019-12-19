@@ -22,8 +22,10 @@ class App extends Component {
                 <Layout>
                     <Switch>
                         {/*<Route path="/" exact component={BurgerBuilder}/>*/}
+
                         <Route path="/checkout" component={Checkout}/>
                         <Route path="/" exact component={BurgerBuilder}/>
+
                         {/*<BurgerBuilder/>*/}
                         {/*/!*{this.state.show ? <BurgerBuilder/> : null}*!/*/}
                         {/*<Checkout/>*/}

@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c77acff1-78af-4af3-81ba-38f53d64d895" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Order/CheckoutSummary/CheckoutSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/CheckoutSummary/CheckoutSummary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Checkout/Checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Checkout/Checkout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +108,10 @@
       <workItem from="1576429426514" duration="5279000" />
       <workItem from="1576479401254" duration="6244000" />
       <workItem from="1576517704941" duration="9869000" />
-      <workItem from="1576653509653" duration="6178000" />
+      <workItem from="1576653509653" duration="6512000" />
+      <workItem from="1576739580159" duration="872000" />
+      <workItem from="1576740985260" duration="664000" />
+      <workItem from="1576769105890" duration="1933000" />
     </task>
     <servers />
   </component>
@@ -118,10 +123,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="29" key="#ESLint/0.0.1366.738@0.0.1366.738" timestamp="1576044378993" />
-    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576160611779">
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576740886770">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1576160611779" />
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1576740886770" />
     <state x="198" y="14" key="SettingsEditor" timestamp="1576481801043">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -130,9 +135,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" width="672" height="677" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1576659227782" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1576658931805">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1576770155277">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1576658931805" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1576770155277" />
   </component>
 </project>

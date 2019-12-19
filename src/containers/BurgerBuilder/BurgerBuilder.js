@@ -11,7 +11,7 @@ import axios from '../../axios-orders';
 const INGREDIENT_PRICE = {
     salad: 25,
     cheese: 40,
-    meat: 90,
+    meat: 80,
     bacon: 30,
 };
 
@@ -99,7 +99,17 @@ class BurgerBuilder extends Component {
 //             .catch(error => {
 //                 this.setState({loading: false, purchasing: false});
 //             });
-        this.props.history.push('/checkout');
+//         this.props.history.push('/checkout');
+        const queryParams = [];
+        for (let i in this.state.ingredients) {
+            queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
+        }
+
+        const queryString = queryParams.join('&');
+        this.props.history.push({
+            pathname: '/checkout',
+            search: '?' + queryString
+        });
     };
 
     addIngredientHandler = (type) => {
