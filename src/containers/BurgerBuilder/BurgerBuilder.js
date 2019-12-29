@@ -20,7 +20,9 @@ class BurgerBuilder extends Component {
     //     super(props);
     //     this.state={};
     // }
+
     state = {
+
         // ingredients: {
         //     salad: 0,
         //     bacon: 0,
@@ -58,6 +60,7 @@ class BurgerBuilder extends Component {
             .reduce((sum, el) => {
                 return sum + el;
             }, 0);
+
         this.setState({purchasable: sum > 0});
     }
 
@@ -100,6 +103,7 @@ class BurgerBuilder extends Component {
 //                 this.setState({loading: false, purchasing: false});
 //             });
 //         this.props.history.push('/checkout');
+
         const queryParams = [];
         for (let i in this.state.ingredients) {
             queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
@@ -118,6 +122,7 @@ class BurgerBuilder extends Component {
         const updateIngredients = {
             ...this.state.ingredients
         };
+
         updateIngredients[type] = updateCount;
         const priceAddition = INGREDIENT_PRICE[type];
         const oldPrice = this.state.totalPrice;
@@ -134,6 +139,7 @@ class BurgerBuilder extends Component {
         }
 
         const updateCount = oldCount - 1;
+
         const updateIngredients = {
             ...this.state.ingredients
         };

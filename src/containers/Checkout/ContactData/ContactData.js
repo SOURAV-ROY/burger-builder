@@ -12,6 +12,10 @@ class ContactData extends Component {
         }
     };
 
+    orderHandler = () => {
+
+    };
+
     render() {
         return (
             <div className={classes.ContactData}>
@@ -21,13 +25,19 @@ class ContactData extends Component {
                     <input className={classes.Input} type="email" name="email" placeholder="Your Email"/>
                     <input className={classes.Input} type="text" name="street" placeholder="Street"/>
                     <input className={classes.Input} type="text" name="postal" placeholder="PostalCode"/>
-                    <Button btnType="Success">ORDER</Button>
+
+                    <Button
+                        btnType="Success"
+                        clicked={this.orderHandler}
+                    >
+                        ORDER
+                    </Button>
+
                 </form>
 
             </div>
         );
     }
-
 
 }
 
