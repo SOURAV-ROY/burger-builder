@@ -11,7 +11,7 @@ import axios from '../../axios-orders';
 const INGREDIENT_PRICE = {
     salad: 25,
     cheese: 40,
-    meat: 80,
+    meat: 90,
     bacon: 30,
 };
 
@@ -20,9 +20,7 @@ class BurgerBuilder extends Component {
     //     super(props);
     //     this.state={};
     // }
-
     state = {
-
         // ingredients: {
         //     salad: 0,
         //     bacon: 0,
@@ -39,7 +37,6 @@ class BurgerBuilder extends Component {
     };
 
     componentDidMount() {
-        console.log(this.props);
         axios.get('https://burger-banai.firebaseio.com/ingredients.json')
             .then(response => {
                 this.setState({ingredients: response.data});
@@ -60,7 +57,6 @@ class BurgerBuilder extends Component {
             .reduce((sum, el) => {
                 return sum + el;
             }, 0);
-
         this.setState({purchasable: sum > 0});
     }
 
@@ -75,47 +71,33 @@ class BurgerBuilder extends Component {
 //  CONTINUE BUTTON CLICK OPTION *********************************************
     purchaseContinueHandler = () => {
         // alert('You Continue!!');
-//         this.setState({loading: true});
-//
-//         const order = {
-//             ingredients: this.state.ingredients,
-//             price: this.state.totalPrice,
-//             customer: {
-//                 name: "Sourav Roy",
-//                 address: {
-//                     street: 'Dhaka',
-//                     zipCode: '1229',
-//                     country: 'Bangladesh'
-//                 },
-//                 email: 'sourav@admin.com'
-//             },
-//             deliveryMethod: 'Fastest'
-//         };
-//
-// //      POST SUBMIT DATA IN FIREBASE ***********************************************
-//         axios.post('/orders.json', order)
-//             // .then(response => console.log(response));
-//             .then(response => {
-//                 this.setState({loading: false, purchasing: false});
-//             })
-//             // .catch(error => console.log(error));
-//             .catch(error => {
-//                 this.setState({loading: false, purchasing: false});
-//             });
-//         this.props.history.push('/checkout');
+        this.setState({loading: true});
 
-        const queryParams = [];
-        for (let i in this.state.ingredients) {
-            queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
-        }
+        const order = {
+            ingredients: this.state.ingredients,
+            price: this.state.totalPrice,
+            customer: {
+                name: "Sourav Roy",
+                address: {
+                    street: 'Dhaka',
+                    zipCode: '1229',
+                    country: 'Bangladesh'
+                },
+                email: 'sourav@admin.com'
+            },
+            deliveryMethod: 'Fastest'
+        };
 
-        queryParams.push('price = ' + this.state.totalPrice);
-
-        const queryString = queryParams.join('&');
-        this.props.history.push({
-            pathname: '/checkout',
-            search: '?' + queryString
-        });
+//      POST SUBMIT DATA IN FIREBASE ***********************************************
+        axios.post('/orders.json', order)
+            // .then(response => console.log(response));
+            .then(response => {
+                this.setState({loading: false, purchasing: false});
+            })
+            // .catch(error => console.log(error));
+            .catch(error => {
+                this.setState({loading: false, purchasing: false});
+            });
     };
 
     addIngredientHandler = (type) => {
@@ -124,7 +106,6 @@ class BurgerBuilder extends Component {
         const updateIngredients = {
             ...this.state.ingredients
         };
-
         updateIngredients[type] = updateCount;
         const priceAddition = INGREDIENT_PRICE[type];
         const oldPrice = this.state.totalPrice;
@@ -141,7 +122,6 @@ class BurgerBuilder extends Component {
         }
 
         const updateCount = oldCount - 1;
-
         const updateIngredients = {
             ...this.state.ingredients
         };
