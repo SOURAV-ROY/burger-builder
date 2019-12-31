@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 import Aux from "../../hoc/ReactAux/ReactAux";
 import Burger from "../../components/Burger/Burger";
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
@@ -37,7 +38,7 @@ class BurgerBuilder extends Component {
     };
 
     componentDidMount() {
-        console.log(this.props);
+        // console.log(this.props);
         axios.get('https://burger-banai.firebaseio.com/ingredients.json')
             .then(response => {
                 this.setState({ingredients: response.data});
