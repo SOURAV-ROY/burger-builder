@@ -10,10 +10,10 @@ import withErrorHandler from "../../hoc/WithErrorHandler/WithErrorHandler";
 import axios from '../../axios-orders';
 
 const INGREDIENT_PRICE = {
-    salad: 25,
-    cheese: 40,
-    meat: 90,
-    bacon: 30,
+    salad: 25.33,
+    cheese: 40.44,
+    meat: 80.56,
+    bacon: 30.66,
 };
 
 class BurgerBuilder extends Component {
