@@ -40,6 +40,7 @@ class Orders extends Component {
                            price={order.price}
                     />
                 ))}
+
                 {/*<Order/>*/}
                 {/*<Order/>*/}
 
