@@ -74,12 +74,20 @@ class ContactData extends Component {
     orderHandler = (event) => {
         event.preventDefault();
         this.setState({loading: true});
+
+        const formData = {};
+        for (let formElementIdentifier in this.state.orderForm){
+            formData[formElementIdentifier] = this.state.orderForm[formElementIdentifier].value;
+        }
+
         const order = {
             ingredients: this.props.ingredients,
+
             // On production, calculate this on the server
             // so users cannot manipulate it before it's
             // sent to the server.
             price: this.props.price,
+            orderData: formData
 
             // customer: {
             //     name: 'SOURAV ROY',
@@ -106,13 +114,16 @@ class ContactData extends Component {
     };
 
     inputChangedHandler = (event, inputIdentifier) => {
-        // console.log(event.target.value);
+        console.log(event.target.value);
+
         const updatedOrderForm = {
             ...this.state.orderForm
         };
+
         const updatedFormElement = {
             ...updatedOrderForm[inputIdentifier]
         };
+
         updatedFormElement.value = event.target.value;
         updatedOrderForm[inputIdentifier] = updatedFormElement;
         this.setState({orderForm: updatedOrderForm});
@@ -129,7 +140,7 @@ class ContactData extends Component {
         }
 
         let form = (
-            <form>
+            <form onSubmit={this.orderHandler}>
 
                 {/*<Input elementType="..." elementConfig="..." value="..."/>*/}
 
@@ -142,12 +153,14 @@ class ContactData extends Component {
                         changed={(event) => this.inputChangedHandler(event, formElement.id)}
                     />
                 ))}
+
                 {/*<Input inputtype="input" type="text" name="name" placeholder="Your Name"/>*/}
                 {/*<Input inputtype="input" type="email" name="email" placeholder="Your Email"/>*/}
                 {/*<Input inputtype="input" type="text" name="street" placeholder="Street"/>*/}
                 {/*<Input inputtype="input" type="text" name="postal" placeholder="Postal Code"/>*/}
 
-                <Button btnType="Success" clicked={this.orderHandler}>ORDER</Button>
+                {/*<Button btnType="Success" clicked={this.orderHandler}>ORDER</Button>*/}
+                <Button btnType="Success">ORDER</Button>
             </form>
         );
         if (this.state.loading) {
