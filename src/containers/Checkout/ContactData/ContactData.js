@@ -180,7 +180,7 @@ class ContactData extends Component {
         updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.validation);
         updatedFormElement.touched = true;
         updatedOrderForm[inputIdentifier] = updatedFormElement;
-        console.log(updatedFormElement);
+        // console.log(updatedFormElement);
 
         let formIsValid = true;
         for (let inputIdentifier in updatedOrderForm) {
@@ -224,6 +224,7 @@ class ContactData extends Component {
                 {/*<Input inputtype="input" type="text" name="postal" placeholder="Postal Code"/>*/}
 
                 {/*<Button btnType="Success" clicked={this.orderHandler}>ORDER</Button>*/}
+
                 <Button btnType="Success" disabled={!this.state.formIsValid}>ORDER</Button>
             </form>
         );

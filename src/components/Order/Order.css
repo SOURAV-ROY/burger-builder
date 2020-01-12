@@ -8,11 +8,24 @@
 }
 
 .Ingredients {
-    background-color: #a2e1d9;
+    background-color: #b7fcf4;
+    /*color: #702e05;*/
+    font-weight: bold;
     text-transform: capitalize;
     display: inline-block;
     margin: 0 8px;
     border: 1px solid #cc6804;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
+}
+
+.Items{
+    background-color: lightgreen;
+    color: #662b05;
+    display: inline-block;
+    font-weight: bolder;
+    margin: auto;
+    border: 1px solid red;
+    padding: 8px;
+    border-radius: 5px;
 }

@@ -17,13 +17,13 @@ const order = (props) => {
     const ingredientOutput = ingredients.map(ig => {
         return <span
             className={classes.Ingredients}
-            key={ig.name}>{ig.name} ({ig.amount})</span>;
+            key={ig.name}>{ig.name} <span className={classes.Items}>{ig.amount}</span></span>;
     });
 
     return (
         <div className={classes.Order}>
             <p>Ingredients: {ingredientOutput}</p>
-            <p>Price: <strong>{Number.parseFloat(props.price).toFixed(2)} &#2547;</strong></p>
+            <p>Price = <strong>{Number.parseFloat(props.price).toFixed(2)} &#2547;</strong></p>
         </div>
     );
 };
