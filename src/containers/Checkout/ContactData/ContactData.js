@@ -228,6 +228,7 @@ class ContactData extends Component {
                 <Button btnType="Success" disabled={!this.state.formIsValid}>ORDER</Button>
             </form>
         );
+
         if (this.state.loading) {
             form = <Spinner/>;
 
@@ -235,7 +236,7 @@ class ContactData extends Component {
 
         return (
             <div className={classes.ContactData}>
-                <h4>Please enter your Contact Details</h4>
+                <h4>Please Enter Your Contact Details</h4>
                 {form}
             </div>
         )

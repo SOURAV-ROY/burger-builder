@@ -4,8 +4,6 @@
     <list default="true" id="c77acff1-78af-4af3-81ba-38f53d64d895" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Order/Order.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/Order.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Order/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/Order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Checkout/ContactData/ContactData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Checkout/ContactData/ContactData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +119,8 @@
       <workItem from="1578550874012" duration="8959000" />
       <workItem from="1578581959584" duration="3799000" />
       <workItem from="1578815871772" duration="23000" />
-      <workItem from="1578815930940" duration="3338000" />
+      <workItem from="1578815930940" duration="5647000" />
+      <workItem from="1578927899832" duration="222000" />
     </task>
     <servers />
   </component>
