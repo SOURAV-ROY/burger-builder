@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c77acff1-78af-4af3-81ba-38f53d64d895" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Checkout/Checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Checkout/Checkout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Checkout/ContactData/ContactData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Checkout/ContactData/ContactData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +122,9 @@
       <workItem from="1578581959584" duration="3799000" />
       <workItem from="1578815871772" duration="23000" />
       <workItem from="1578815930940" duration="5647000" />
-      <workItem from="1578927899832" duration="7733000" />
+      <workItem from="1578927899832" duration="8185000" />
+      <workItem from="1579014614754" duration="32000" />
+      <workItem from="1579014669226" duration="4100000" />
     </task>
     <servers />
   </component>
@@ -131,10 +136,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="29" key="#ESLint/0.0.1366.738@0.0.1366.738" timestamp="1576044378993" />
-    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578815887602">
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579014635832">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1578815887602" />
+    <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1579014635832" />
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1577772872056">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

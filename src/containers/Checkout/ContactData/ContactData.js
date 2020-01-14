@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 import Button from '../../../components/UI/Button/Button';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import classes from './ContactData.css';
@@ -90,7 +91,7 @@ class ContactData extends Component {
                         {value: 'cheapest', displayValue: 'Cheapest'}
                     ]
                 },
-                value: 'fastest',
+                value: '',
                 validation: {},
                 valid: true
                 // valid: false
@@ -114,7 +115,8 @@ class ContactData extends Component {
         }
 
         const order = {
-            ingredients: this.props.ingredients,
+            // ingredients: this.props.ingredients,
+            ingredients: this.props.ings,
 
             // On production, calculate this on the server
             // so users cannot manipulate it before it's
@@ -147,20 +149,20 @@ class ContactData extends Component {
     };
 
     checkValidity(value, rules) {
-        let isValid = false;
+        let isValid = true;
 
         if (!rules) {
             return true;
         }
 
         if (rules.required) {
-            isValid = value.trim() !== '';
+            isValid = value.trim() !== '' && isValid;
         }
         if (rules.minLength) {
-            isValid = value.length >= rules.minLength;
+            isValid = value.length >= rules.minLength && isValid;
         }
         if (rules.maxLength) {
-            isValid = value.length <= rules.maxLength;
+            isValid = value.length <= rules.maxLength && isValid;
         }
         return isValid;
     }
@@ -243,4 +245,11 @@ class ContactData extends Component {
     }
 }
 
-export default ContactData;
+const mapStateToProps = state => {
+    return {
+        ings: state.ingredients,
+        price: state.totalPrice
+    }
+};
+
+export default connect(mapStateToProps)(ContactData);

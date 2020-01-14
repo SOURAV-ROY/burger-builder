@@ -41,6 +41,7 @@ class BurgerBuilder extends Component {
 
     componentDidMount() {
         console.log(this.props);
+
         // axios.get('https://burger-banai.firebaseio.com/ingredients.json')
         //     .then(response => {
         //         this.setState({ingredients: response.data});
@@ -54,6 +55,7 @@ class BurgerBuilder extends Component {
         // const ingredients = {
         //     ...this.state.ingredients
         // };
+
         const sum = Object.keys(ingredients)
             .map(igKey => {
                 return ingredients[igKey];
@@ -62,6 +64,7 @@ class BurgerBuilder extends Component {
                 return sum + el;
             }, 0);
         return sum > 0;
+
         // this.setState({purchasable: sum > 0});
     }
 
@@ -75,6 +78,9 @@ class BurgerBuilder extends Component {
 
 //  CONTINUE BUTTON CLICK OPTION *********************************************
     purchaseContinueHandler = () => {
+
+        this.props.history.push('/checkout');
+
         // alert('You Continue!!');
 //         this.setState({loading: true});
 //
@@ -105,18 +111,18 @@ class BurgerBuilder extends Component {
 //             });
 //         this.props.history.push('checkout');
 
-        const queryParams = [];
-        for (let i in this.state.ingredients) {
-            queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
-        }
-
-        queryParams.push('price=' + this.state.totalPrice);
-
-        const queryString = queryParams.join('&');
-        this.props.history.push({
-            pathname: '/checkout',
-            search: '?' + queryString
-        });
+        // const queryParams = [];
+        // for (let i in this.state.ingredients) {
+        //     queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
+        // }
+        //
+        // queryParams.push('price=' + this.state.totalPrice);
+        //
+        // const queryString = queryParams.join('&');
+        // this.props.history.push({
+        //     pathname: '/checkout',
+        //     search: '?' + queryString
+        // });
     };
 
     // addIngredientHandler = (type) => {
