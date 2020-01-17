@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import Button from '../../../components/UI/Button/Button';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import classes from './ContactData.css';
-import axios from '../../../axios-orders';
+// import axios from '../../../axios-orders';
 import Input from '../../../components/UI/Input/Input';
 
 class ContactData extends Component {
@@ -138,14 +138,14 @@ class ContactData extends Component {
 
         // orders will be the name of the node created
         // in firebase
-        axios.post('/orders.json', order)
-            .then(response => {
-                this.setState({loading: false});
-                this.props.history.push('/');
-            })
-            .catch(error => {
-                this.setState({loading: false});
-            });
+        // axios.post('/orders.json', order)
+        //     .then(response => {
+        //         this.setState({loading: false});
+        //         this.props.history.push('/');
+        //     })
+        //     .catch(error => {
+        //         this.setState({loading: false});
+        //     });
     };
 
     checkValidity(value, rules) {
