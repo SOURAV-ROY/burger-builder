@@ -269,6 +269,7 @@ const mapStateToProps = state => {
 };
 const mapDispatchToProps = dispatch => {
     return {
+
         // onIngredientAdded: (ingName) => dispatch({type: actionTypes.ADD_INGREDIENT, ingredientName: ingName}),
         onIngredientAdded: (ingName) => dispatch(burgerBuilderActions.addIngredient(ingName)),
 
