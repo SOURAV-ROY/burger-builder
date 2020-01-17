@@ -42,6 +42,7 @@ class BurgerBuilder extends Component {
 
     componentDidMount() {
         console.log(this.props);
+        this.props.onInitIngredients();
 
         // axios.get('https://burger-banai.firebaseio.com/ingredients.json')
         //     .then(response => {
@@ -181,7 +182,8 @@ class BurgerBuilder extends Component {
         //     purchaseContinued={this.purchaseContinueHandler}
         // />;
 
-        let burger = this.state.error ? <p>Ingredients Can't Be Loaded</p> : <Spinner/>;
+        // let burger = this.state.error ? <p>Ingredients Can't Be Loaded</p> : <Spinner/>;
+        let burger = this.props.error ? <p>Ingredients Can't Be Loaded</p> : <Spinner/>;
 
         // if (this.state.ingredients) {
         if (this.props.ings) {
@@ -264,7 +266,8 @@ class BurgerBuilder extends Component {
 const mapStateToProps = state => {
     return {
         ings: state.ingredients,
-        price: state.totalPrice
+        price: state.totalPrice,
+        error: state.error
     }
 
 };
@@ -275,7 +278,10 @@ const mapDispatchToProps = dispatch => {
         onIngredientAdded: (ingName) => dispatch(burgerBuilderActions.addIngredient(ingName)),
 
         // onIngredientRemoved: (ingName) => dispatch({type: actionTypes.REMOVE_INGREDIENT, ingredientName: ingName})
-        onIngredientRemoved: (ingName) => dispatch(burgerBuilderActions.removeIngredient(ingName))
+        onIngredientRemoved: (ingName) => dispatch(burgerBuilderActions.removeIngredient(ingName)),
+
+        //onInitIngredients ****************************************************
+        onInitIngredients: () => dispatch(burgerBuilderActions.initIngredients())
     }
 
 };
