@@ -36,20 +36,20 @@ class BurgerBuilder extends Component {
         // totalPrice: 20,
         // purchasable: false,
         purchasing: false,
-        loading: false,
-        error: false
+        // loading: false,
+        // error: false
     };
 
     componentDidMount() {
         console.log(this.props);
 
-        axios.get('https://burger-banai.firebaseio.com/ingredients.json')
-            .then(response => {
-                this.setState({ingredients: response.data});
-            })
-            .catch(error => {
-                this.setState({error: true});
-            });
+        // axios.get('https://burger-banai.firebaseio.com/ingredients.json')
+        //     .then(response => {
+        //         this.setState({ingredients: response.data});
+        //     })
+        //     .catch(error => {
+        //         this.setState({error: true});
+        //     });
     }
 
     updatePurchaseState(ingredients) {
@@ -223,9 +223,10 @@ class BurgerBuilder extends Component {
                 purchaseContinued={this.purchaseContinueHandler}
             />;
         }
-        if (this.state.loading) {
-            orderSummary = <Spinner/>;
-        }
+
+        // if (this.state.loading) {
+        //     orderSummary = <Spinner/>;
+        // }
 
 
         return (
