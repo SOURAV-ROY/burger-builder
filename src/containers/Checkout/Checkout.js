@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Route} from 'react-router-dom';
+import {Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import CheckoutSummary from '../../components/Order/CheckoutSummary/CheckoutSummary';
 import ContactData from "./ContactData/ContactData";
@@ -44,31 +44,53 @@ class Checkout extends Component {
     };
 
     render() {
-        return (
-            <div>
-                <CheckoutSummary
-                    // ingredients={this.state.ingredients}
-                    ingredients={this.props.ings}
-                    checkoutCancelled={this.checkoutCancelledHandler}
-                    checkoutContinued={this.checkoutContinuedHandler}
-                />
+        let summary = <Redirect to="/"/>;
+        if (this.props.ings) {
 
-                <Route
-                    path={this.props.match.path + '/contact-data'}
-                    component={ContactData}
+            summary = (
+                <div>
+                    <CheckoutSummary
+                        // ingredients={this.state.ingredients}
+                        ingredients={this.props.ings}
+                        checkoutCancelled={this.checkoutCancelledHandler}
+                        checkoutContinued={this.checkoutContinuedHandler}
+                    />
 
-                    // render={(props) => (
-                    //     <ContactData ingredients={this.state.ingredients} price={this.state.totalPrice} {...props}/>)}
-                />
-            </div>
-        );
+                    <Route
+                        path={this.props.match.path + '/contact-data'}
+                        component={ContactData}
+                    />
+                </div>
+            );
+        }
+        return summary;
+
+        // return (
+        //     <div>
+        //         {summary}
+        //
+        //         {/*<CheckoutSummary*/}
+        //         {/*    // ingredients={this.state.ingredients}*/}
+        //         {/*    ingredients={this.props.ings}*/}
+        //         {/*    checkoutCancelled={this.checkoutCancelledHandler}*/}
+        //         {/*    checkoutContinued={this.checkoutContinuedHandler}*/}
+        //         {/*/>*/}
+        //
+        //         {/*<Route*/}
+        //         {/*    path={this.props.match.path + '/contact-data'}*/}
+        //         {/*    component={ContactData}*/}
+        //
+        //         {/*    // render={(props) => (*/}
+        //         {/*    //     <ContactData ingredients={this.state.ingredients} price={this.state.totalPrice} {...props}/>)}*/}
+        //         {/*/>*/}
+        //     </div>
+        // );
     }
 }
 
 const mapStateToProps = state => {
     return {
-        ings: state.ingredients,
-        // price: state.totalPrice
+        ings: state.ingredients
     }
 };
 

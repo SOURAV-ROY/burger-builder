@@ -3,8 +3,10 @@ import {connect} from 'react-redux';
 import Button from '../../../components/UI/Button/Button';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import classes from './ContactData.css';
-// import axios from '../../../axios-orders';
+import axios from '../../../axios-orders';
 import Input from '../../../components/UI/Input/Input';
+import withErrorHandler from "../../../hoc/WithErrorHandler/WithErrorHandler";
+import * as actions from '../../../store/actions/index';
 
 class ContactData extends Component {
     state = {
@@ -100,14 +102,14 @@ class ContactData extends Component {
                 // }
             }
         },
-        formIsValid: false,
-        loading: false
+        formIsValid: false
+        // loading: false
     };
 
 
     orderHandler = (event) => {
         event.preventDefault();
-        this.setState({loading: true});
+        // this.setState({loading: true});
 
         const formData = {};
         for (let formElementIdentifier in this.state.orderForm) {
@@ -122,19 +124,10 @@ class ContactData extends Component {
             // so users cannot manipulate it before it's
             // sent to the server.
             price: this.props.price,
-            orderData: formData
-
-            // customer: {
-            //     name: 'SOURAV ROY',
-            //     address: {
-            //         street: 'KHILKHET',
-            //         zipCode: '1229',
-            //         country: 'DHAKA'
-            //     },
-            //     email: 'sourav@admin.com'
-            // },
-            // deliverMethod: 'fastest'
+            orderData: formData,
         };
+
+        this.props.onOrderBurger(order);
 
         // orders will be the name of the node created
         // in firebase
@@ -231,7 +224,8 @@ class ContactData extends Component {
             </form>
         );
 
-        if (this.state.loading) {
+        // if (this.state.loading) {
+        if (this.props.loading) {
             form = <Spinner/>;
 
         }
@@ -248,8 +242,16 @@ class ContactData extends Component {
 const mapStateToProps = state => {
     return {
         ings: state.ingredients,
-        price: state.totalPrice
+        price: state.totalPrice,
+        loading: state.loading
     }
 };
 
-export default connect(mapStateToProps)(ContactData);
+const mapDispatchToProps = dispatch => {
+    return {
+        onOrderBurger: (orderData) => dispatch(actions.purchaseBurger(orderData))
+    };
+
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(ContactData, axios));
