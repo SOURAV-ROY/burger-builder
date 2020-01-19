@@ -11,13 +11,6 @@ class Checkout extends Component {
 
         ingredients: null,
         price: 0
-
-        // ingredients: {
-        //     salad: 1,
-        //     bacon: 1,
-        //     cheese: 1,
-        //     meat: 1,
-        // }
     };
 
     // UNSAFE_componentWillMount() {

@@ -80,8 +80,8 @@ class BurgerBuilder extends Component {
 
 //  CONTINUE BUTTON CLICK OPTION *********************************************
     purchaseContinueHandler = () => {
-        this.props.onInitPurchase();
 
+        this.props.onInitPurchase();
         this.props.history.push('/checkout');
 
         // alert('You Continue!!');
