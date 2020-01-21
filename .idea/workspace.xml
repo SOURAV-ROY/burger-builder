@@ -4,7 +4,7 @@
     <list default="true" id="c77acff1-78af-4af3-81ba-38f53d64d895" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +132,7 @@
       <workItem from="1579447496242" duration="6617000" />
       <workItem from="1579499312321" duration="12166000" />
       <workItem from="1579517558700" duration="4955000" />
-      <workItem from="1579584752691" duration="6412000" />
+      <workItem from="1579584752691" duration="8712000" />
     </task>
     <servers />
   </component>
@@ -156,10 +156,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="198" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1576481801043" />
-    <state x="-152" y="123" width="672" height="677" key="run.anything.popup" timestamp="1579335243962">
+    <state x="-152" y="123" width="672" height="677" key="run.anything.popup" timestamp="1579592488161">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="-152" y="123" width="672" height="677" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1579335243962" />
+    <state x="-152" y="123" width="672" height="677" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1579592488161" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1579508855180">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
