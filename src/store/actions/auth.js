@@ -8,11 +8,12 @@ export const authStart = () => {
     };
 };
 
-export const authSuccess = (token, userId) => {
+export const authSuccess = (token, userId, localId) => {
     return {
         type: actionTypes.AUTH_SUCCESS,
         idToken: token,
-        userId: userId
+        userId: userId,
+        localId: localId
     };
 };
 
@@ -47,7 +48,8 @@ export const auth = (email, password, isSignup) => {
             })
             .catch(err => {
                 console.log(err);
-                dispatch(authFail(err));
+                // dispatch(authFail(err));
+                dispatch(authFail(err.response.data.error));
             });
     };
 };
