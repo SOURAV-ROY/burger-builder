@@ -5,15 +5,9 @@ import {updateObject} from '../utility';
 const initialState = {
     ingredients: null,
 
-    // ingredients: {
-    //     salad: 0,
-    //     bacon: 0,
-    //     cheese: 0,
-    //     meat: 0
-    // },
-
     // totalPrice: 20,
     error: false,
+    building: false
 };
 
 const INGREDIENT_PRICES = {
@@ -31,7 +25,8 @@ const addIngredient = (state, action) => {
 
     const updateState = {
         ingredients: updatedIngredients,
-        totalPrice: state.totalPrice + INGREDIENT_PRICES[action.ingredientName]
+        totalPrice: state.totalPrice + INGREDIENT_PRICES[action.ingredientName],
+        building: true
     };
     return updateObject(state, updateState);
 };
@@ -60,7 +55,8 @@ const setIngredients = (state, action) => {
             meat: action.ingredients.meat
         },
         totalPrice: 10,
-        error: false
+        error: false,
+        building: false
     });
 };
 
