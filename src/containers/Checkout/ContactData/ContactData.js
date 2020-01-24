@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {updateObject} from '../../../shared/utility';
+
 import Button from '../../../components/UI/Button/Button';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import classes from './ContactData.css';
@@ -166,25 +168,27 @@ class ContactData extends Component {
     inputChangedHandler = (event, inputIdentifier) => {
         // console.log(event.target.value);
 
-        const updatedOrderForm = {
-            ...this.state.orderForm
-        };
+        const updatedFormElement = updateObject(this.state.orderForm[inputIdentifier], {
+            value: event.target.value,
+            valid: this.checkValidity(event.target.value, this.state.orderForm[inputIdentifier].validation),
+            touched: true
+        });
 
-        const updatedFormElement = {
-            ...updatedOrderForm[inputIdentifier]
-        };
+        const updatedOrderForm = updateObject(this.state.orderForm, {
+            [inputIdentifier]: updatedFormElement
+        });
 
-        updatedFormElement.value = event.target.value;
-        updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.validation);
-        updatedFormElement.touched = true;
         updatedOrderForm[inputIdentifier] = updatedFormElement;
         // console.log(updatedFormElement);
 
         let formIsValid = true;
+
         for (let inputIdentifier in updatedOrderForm) {
             formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
         }
+
         console.log(formIsValid);
+
         this.setState({orderForm: updatedOrderForm, formIsValid: formIsValid});
     };
 
@@ -215,13 +219,6 @@ class ContactData extends Component {
                         changed={(event) => this.inputChangedHandler(event, formElement.id)}
                     />
                 ))}
-
-                {/*<Input inputtype="input" type="text" name="name" placeholder="Your Name"/>*/}
-                {/*<Input inputtype="input" type="email" name="email" placeholder="Your Email"/>*/}
-                {/*<Input inputtype="input" type="text" name="street" placeholder="Street"/>*/}
-                {/*<Input inputtype="input" type="text" name="postal" placeholder="Postal Code"/>*/}
-
-                {/*<Button btnType="Success" clicked={this.orderHandler}>ORDER</Button>*/}
 
                 <Button btnType="Success" disabled={!this.state.formIsValid}>ORDER</Button>
             </form>
