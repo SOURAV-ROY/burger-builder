@@ -1,18 +1,9 @@
 import React, {Component} from 'react';
+
 import Aux from "../../../hoc/ReactAux/ReactAux";
 import Button from '../../UI/Button/Button';
 
 class OrderSummary extends Component {
-
-    //This should be a functional component, doesn't have to be class
-    UNSAFE_componentWillUpdate(){
-        console.log('[OrderSummary] WillUpdate');
-    }
-
-    // shouldComponentUpdate(nextProps, nextState, nextContext) {
-    //     // if (nextProps.show != this.props.show){}
-    //     return nextProps.show != this.props.show;
-    // }
 
     render() {
 
