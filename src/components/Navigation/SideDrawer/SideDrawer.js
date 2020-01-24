@@ -6,7 +6,7 @@ import BackDrop from '../../UI/BackDrop/BackDrop';
 import Aux from "../../../hoc/ReactAux/ReactAux";
 
 const sideDrawer = (props) => {
-    //***************
+
     let attachedClasses = [classes.SideDrawer, classes.Close];
     if (props.open) {
         attachedClasses = [classes.SideDrawer, classes.Open];
@@ -15,17 +15,19 @@ const sideDrawer = (props) => {
         <Aux>
 
             <BackDrop show={props.open} clicked={props.closed}/>
+
             {/*<div className={classes.SideDrawer}>*/}
 
             <div className={attachedClasses.join(' ')} onClick={props.closed}>
+
                 <div className={classes.Logo}>
-                    {/*<Logo height="11%"/>*/}
                     <Logo/>
                 </div>
 
                 <nav>
                     <NavigationItems isAuthenticated={props.isAuth}/>
                 </nav>
+
             </div>
 
         </Aux>
