@@ -9,7 +9,6 @@ const withErrorHandler = (WrappedComponent, axios) => {
             error: null
         };
 
-        // componentDidMount() {
         reqInterceptor;
         resInterceptor;
 
@@ -59,14 +58,3 @@ const withErrorHandler = (WrappedComponent, axios) => {
 };
 
 export default withErrorHandler;
-
-// return (props) => {
-//     return (
-//         <Aux>
-//             <Modal show>
-//                 Something Didn't Work!!!
-//             </Modal>
-//             <WrappedComponent {...props}/>
-//         </Aux>
-//     );
-// }
