@@ -24,6 +24,7 @@ export const purchaseBurgerStart = () => {
 
 // export const purchaseBurger = (orderData) => {
 export const purchaseBurger = (orderData, token) => {
+
     return dispatch => {
         dispatch(purchaseBurgerStart());
 
@@ -82,6 +83,7 @@ export const fetchOrders = (token, userId) => {
             .then(res => {
                 // console.log(res.data);
                 const fetchedOrders = [];
+
                 for (let key in res.data) {
                     fetchedOrders.push({
                         ...res.data[key],
@@ -89,6 +91,7 @@ export const fetchOrders = (token, userId) => {
                         id: key
                     });
                 }
+
                 dispatch(fetchOrdersSuccess(fetchedOrders));
                 // this.setState({loading: false, orders: fetchedOrders});
 

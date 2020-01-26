@@ -27,7 +27,7 @@ const withErrorHandler = (WrappedComponent, axios) => {
 
         componentWillUnmount() {
 
-            console.log('Will Unmount', this.reqInterceptor, this.resInterceptor);
+            console.log('Will Unmount SOURAV', this.reqInterceptor, this.resInterceptor);
 
             axios.interceptors.request.eject(this.reqInterceptor);
             axios.interceptors.request.eject(this.resInterceptor);
@@ -43,11 +43,9 @@ const withErrorHandler = (WrappedComponent, axios) => {
                 <Aux>
                     <Modal
                         show={this.state.error}
-                        // clicked={this.errorConfirmHandler}
                         modalClosed={this.errorConfirmHandler}
                     >
                         {this.state.error ? this.state.error.message : null}
-                        {/*Something Didn't Work!!!*/}
                     </Modal>
                     <WrappedComponent {...this.props}/>
                 </Aux>

@@ -6,7 +6,10 @@
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Burger/Burger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger/Burger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Burger/BurgerIngredient/BurgerIngredient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger/BurgerIngredient/BurgerIngredient.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hoc/WithErrorHandler/WithErrorHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/WithErrorHandler/WithErrorHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/asyncComponent/asyncComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/asyncComponent/asyncComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +145,8 @@
       <workItem from="1579761046207" duration="8816000" />
       <workItem from="1579772373720" duration="5715000" />
       <workItem from="1579846166655" duration="7738000" />
-      <workItem from="1579935791254" duration="3365000" />
+      <workItem from="1579935791254" duration="5988000" />
+      <workItem from="1580016804759" duration="622000" />
     </task>
     <servers />
   </component>

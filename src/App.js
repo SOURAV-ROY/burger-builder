@@ -51,8 +51,6 @@ class App extends Component {
 
                 <Switch>
                     {/*<Route path="/checkout" component={Checkout}/>*/}
-                    {/*<Route path="/orders" component={Orders}/>*/}
-                    {/*<Route path="/auth" component={Auth}/>*/}
 
                     <Route path="/checkout" component={asyncCheckout}/>
                     <Route path="/orders" component={asyncOrders}/>
