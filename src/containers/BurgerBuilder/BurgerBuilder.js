@@ -19,7 +19,8 @@ import * as Actions from '../../store/actions/index';
 //     bacon: 30.66,
 // };
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
+// class BurgerBuilder extends Component {
     // constructor(props) {
     //     super(props);
     //     this.state={};
