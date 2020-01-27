@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c77acff1-78af-4af3-81ba-38f53d64d895" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer/burgerBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer/burgerBuilder.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +146,9 @@
       <workItem from="1579846166655" duration="7738000" />
       <workItem from="1579935791254" duration="5988000" />
       <workItem from="1580016804759" duration="11337000" />
-      <workItem from="1580051319052" duration="5041000" />
+      <workItem from="1580051319052" duration="5709000" />
+      <workItem from="1580059144162" duration="851000" />
+      <workItem from="1580103023688" duration="1406000" />
     </task>
     <servers />
   </component>
@@ -173,9 +176,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="-152" y="123" width="672" height="677" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1579678500435" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1579852833020">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580059847699">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1579852833020" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1580059847699" />
   </component>
 </project>

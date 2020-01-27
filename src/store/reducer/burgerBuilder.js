@@ -11,10 +11,10 @@ const initialState = {
 };
 
 const INGREDIENT_PRICES = {
-    salad: 25.33,
-    cheese: 40.44,
-    meat: 80.56,
-    bacon: 30.66,
+    salad: 25,
+    cheese: 40,
+    bacon: 30,
+    meat: 80,
 };
 
 // ADD INGREDIENT **************************************************************************************************
@@ -39,7 +39,7 @@ const removeIngredient = (state, action) => {
 
     const updateSt = {
         ingredients: updatedIngs,
-        totalPrice: state.totalPrice + INGREDIENT_PRICES[action.ingredientName],
+        totalPrice: state.totalPrice - INGREDIENT_PRICES[action.ingredientName],
         building: true
     };
     return updateObject(state, updateSt);
