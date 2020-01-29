@@ -8,8 +8,8 @@ https://burger-banai.web.app
 
    <p align="center">
      <img src="https://github.com/SOURAV-ROY/burger-builder/blob/master/public/SS/SS1.png" width="870">
-     <img src="https://github.com/SOURAV-ROY/burger-builder/blob/master/public/SS/SS2.png" width="870">
-     <img src="https://github.com/SOURAV-ROY/burger-builder/blob/master/public/SS/SS3.png" width="870">
+     <img src="https://github.com/SOURAV-ROY/burger-builder/blob/master/public/SS/SS2.png" width="435">
+     <img src="https://github.com/SOURAV-ROY/burger-builder/blob/master/public/SS/SS3.png" width="435">
    </p>
    
 ## Commands
