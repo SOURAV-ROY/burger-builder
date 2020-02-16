@@ -57,39 +57,39 @@ BB
 │   |   | 
 |   |   └── Order.js
 |   |
-│   │── UI
+│   └── UI
+|       |
+│       |── BackDrop
+│       |   └─ BackDrop.js
+│       |── Button
+│       |   └─ Button.js
+│       |── Input
+│       |   └─ Input.js
+│       |── Modal
+│       |   └─ Modal.js
+|       └── Spinner
+|           └─ Spinner.js
+│    
+├── containers
+|   |── Auth
 |   |   |
-│   |   |── BackDrop
-│   |   |   └─ BackDrop.js
-│   |   |── Button
-│   |   |   └─ Button.js
-│   |   |── Input
-│   |   |   └─ Input.js
-│   |   |── Modal
-│   |   |   └─ Modal.js
-|   |   └── Spinner
-|   |       └─ Spinner.js
-│   │
-|   ├── containers
-│   |   |── Auth
-|   |   |   |
-│   |   |   |── Logout
-│   |   |   |   └─ Logout.js
-│   |   |   └─ Auth.js
-|   |   |
-│   |   |── BurgerBuilder
-│   |   |   └─ BurgerBuilder.js
-|   |   |
-│   |   |── Checkout
-|   |   |   |
-│   |   |   |── ContactData
-│   |   |   |   └─ ContactData.js
-|   |   |   |
-│   |   |   └─ Checkout.js
-│   |   |   
-|   |   └─ Orders
-|   |       └─ Orders.js
+|   |   |── Logout
+|   |   |   └─ Logout.js
+|   |   └─ Auth.js
 |   |
+|   |── BurgerBuilder
+|   |   └─ BurgerBuilder.js
+|   |
+|   |── Checkout
+|   |   |
+|   |   |── ContactData
+|   |   |   └─ ContactData.js
+|   |   |
+|   |   └─ Checkout.js
+|   |   
+|   └─ Orders
+|       └─ Orders.js
+|
 └── index.js
 ```
 
