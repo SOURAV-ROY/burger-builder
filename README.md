@@ -4,6 +4,55 @@
 
 ### https://burger-banai.web.app
 
+Folder Structure
+================
+```
+BB
+├── assests
+│   └── images
+│       └── logo.png
+|
+├── components
+|   |
+│   │── Burger
+│   │   |── BuildControls
+|   |   │   |──── BuildControl
+│   │   |   |   └─── BuildControl.js
+│   │   |   └── BuildControls.js
+|   |   |
+│   │   |── BurgerIngredients
+|   |   |   └── BurgerIngredients.js
+|   |   |
+│   │   |── OrderSummary
+|   |   |   └── OrderSummary.j         
+|   |   |      
+|   |   └── Burger.js
+│   │
+│   │── Logo
+|   |   └── Logo.js
+|   |
+│   │── Navigation
+|   |   |
+│   |   |── NavigationItems
+│   |   |   |── NavigationItem
+│   |   |   |   └─ NavigationItem.js  
+│   |   |   |
+│   |   |   └── NavigationItems.js
+|   |   |  
+│   |   |── SideDrawer
+│   |   |   |── DrawerToggle
+│   |   |   |   └─ DrawerToggle.js
+|   |   |   |
+│   |   |   └── SideDrawer.js
+│   |   |
+|   |   └── Toolbar
+|   |       └── Toolbar.js
+│   │
+│   │
+│   └── Burger
+└── index.js
+```
+
 <h1 align="center">DEMO</h1>
 
    <p align="center">
