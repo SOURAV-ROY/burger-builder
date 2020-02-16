@@ -19,6 +19,7 @@ BB
 │   │── Burger
 │   │   |
 │   │   |── BuildControls
+|   |   |   |
 |   |   │   |── BuildControl
 │   │   |   |   └── BuildControl.js
 |   |   |   |
@@ -38,15 +39,16 @@ BB
 │   │── Navigation
 |   |   |
 │   |   |── NavigationItems
+|   |   |   |
 │   |   |   |── NavigationItem
 │   |   |   |   └─ NavigationItem.js  
 │   |   |   |
 │   |   |   └── NavigationItems.js
 |   |   |  
 │   |   |── SideDrawer
+|   |   |   |
 │   |   |   |── DrawerToggle
 │   |   |   |   └─ DrawerToggle.js
-|   |   |   |
 │   |   |   └── SideDrawer.js
 │   |   |
 |   |   └── Toolbar
@@ -56,7 +58,6 @@ BB
 |   |   |
 │   |   |── CheckoutSummary
 │   |   |   └─ CheckoutSummary.js  
-│   |   | 
 |   |   └── Order.js
 |   |
 │   └── UI
