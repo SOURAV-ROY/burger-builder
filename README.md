@@ -10,7 +10,7 @@ Folder Structure
 BB
 ├── App.js
 |
-├── assests
+├── assets
 │   └── images
 │       └── logo.png
 |
