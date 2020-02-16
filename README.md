@@ -19,6 +19,7 @@ BB
 │   │   |── BuildControls
 |   |   │   |── BuildControl
 │   │   |   |   └── BuildControl.js
+|   |   |   |
 │   │   |   └── BuildControls.js
 |   |   |
 │   │   |── BurgerIngredients
@@ -67,9 +68,28 @@ BB
 │   |   |── Modal
 │   |   |   └─ Modal.js
 |   |   └── Spinner
-|   |       └── Spinner.js
+|   |       └─ Spinner.js
 │   │
-│   └── Burger
+|   ├── containers
+│   |   |── Auth
+|   |   |   |
+│   |   |   |── Logout
+│   |   |   |   └─ Logout.js
+│   |   |   └─ Auth.js
+|   |   |
+│   |   |── BurgerBuilder
+│   |   |   └─ BurgerBuilder.js
+|   |   |
+│   |   |── Checkout
+|   |   |   |
+│   |   |   |── ContactData
+│   |   |   |   └─ ContactData.js
+|   |   |   |
+│   |   |   └─ Checkout.js
+│   |   |   
+|   |   └─ Orders
+|   |       └─ Orders.js
+|   |
 └── index.js
 ```
 
