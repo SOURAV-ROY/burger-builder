@@ -15,9 +15,10 @@ BB
 ├── components
 |   |
 │   │── Burger
+│   │   |
 │   │   |── BuildControls
-|   |   │   |──── BuildControl
-│   │   |   |   └─── BuildControl.js
+|   |   │   |── BuildControl
+│   │   |   |   └── BuildControl.js
 │   │   |   └── BuildControls.js
 |   |   |
 │   │   |── BurgerIngredients
@@ -48,6 +49,25 @@ BB
 |   |   └── Toolbar
 |   |       └── Toolbar.js
 │   │
+│   │── Order
+|   |   |
+│   |   |── CheckoutSummary
+│   |   |   └─ CheckoutSummary.js  
+│   |   | 
+|   |   └── Order.js
+|   |
+│   │── UI
+|   |   |
+│   |   |── BackDrop
+│   |   |   └─ BackDrop.js
+│   |   |── Button
+│   |   |   └─ Button.js
+│   |   |── Input
+│   |   |   └─ Input.js
+│   |   |── Modal
+│   |   |   └─ Modal.js
+|   |   └── Spinner
+|   |       └── Spinner.js
 │   │
 │   └── Burger
 └── index.js
