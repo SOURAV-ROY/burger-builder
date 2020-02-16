@@ -8,6 +8,8 @@ Folder Structure
 ================
 ```
 BB
+├── App.js
+|
 ├── assests
 │   └── images
 │       └── logo.png
@@ -71,6 +73,7 @@ BB
 |           └─ Spinner.js
 │    
 ├── containers
+|   |
 |   |── Auth
 |   |   |
 |   |   |── Logout
@@ -89,6 +92,20 @@ BB
 |   |   
 |   └─ Orders
 |       └─ Orders.js
+|
+├── hoc
+|   |
+|   |── asyncComponent
+|   |   └─ asyncComponent.js
+|   |── Layout
+|   |   └─ Layout.js
+|   |── ReactAux
+|   |   └─ ReactAux.js
+|   └─ WithErrorHandler
+|      └─ WithErrorHandler.js
+|
+├── shared
+|   └─ utility.js
 |
 └── index.js
 ```
