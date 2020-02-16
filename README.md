@@ -118,10 +118,13 @@ BB
 |   |
 |   |── asyncComponent
 |   |   └─ asyncComponent.js
+|   |
 |   |── Layout
 |   |   └─ Layout.js
+|   |
 |   |── ReactAux
 |   |   └─ ReactAux.js
+|   |
 |   └─ WithErrorHandler
 |      └─ WithErrorHandler.js
 |
