@@ -107,6 +107,22 @@ BB
 ├── shared
 |   └─ utility.js
 |
+├── store
+|   |
+|   |── actions
+|   |   |─ actionTypes.js
+|   |   |─ auth.js
+|   |   |─ burgerBuilder.js
+|   |   |─ index.js
+|   |   └─ order.js
+|   |
+|   └── reducer
+|       |─ auth.js
+|       |─ burgerBuilder.js
+|       └─ order.js
+|
+├── axios-orders.js
+|
 └── index.js
 ```
 
