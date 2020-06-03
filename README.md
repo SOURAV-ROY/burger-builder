@@ -49,7 +49,7 @@ BB
 |   |   |   └── BurgerIngredients.js
 |   |   |
 │   │   |── OrderSummary
-|   |   |   └── OrderSummary.j         
+|   |   |   └── OrderSummary.js         
 |   |   |      
 |   |   └── Burger.js
 │   │
